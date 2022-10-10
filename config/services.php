@@ -34,12 +34,12 @@ return [
     'github' => [
         'client_id' => env('GITHUB_CLIENT_ID'),
         'client_secret' => env('GITHUB_CLIENT_SECRET'),
-        'redirect' => 'http://127.0.0.1:8000/oauth/github/callback',
+        'redirect' => env('APP_URL') . '/oauth/github/callback',
     ],
 
     'line' => [    
         'client_id' => env('LINE_CLIENT_ID'),  
         'client_secret' => env('LINE_CLIENT_SECRET'),  
-        'redirect' => 'http://127.0.0.1:8000/oauth/line/callback',
+        'redirect' => env('APP_URL') . '/oauth/line/callback',
     ],
 ];
