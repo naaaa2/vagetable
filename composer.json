@@ -55,20 +55,5 @@
       "compile": [
           "@php -r \"file_exists('.env') || copy('.env.heroku', '.env');\""
       ]
-  },
-  "extra": {
-      "laravel": {
-          "dont-discover": []
-      }
-  },
-  "config": {
-      "optimize-autoloader": "true",
-      "preferred-install": "dist",
-      "sort-packages": "true",
-      "allow-plugins": {
-          "pestphp/pest-plugin": "true"
-      }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": "true"
+  }
 }
