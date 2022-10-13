@@ -45,11 +45,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => $DATABASE_URL["host"],
+            'host' => $DATABASE_URL["us-cdbr-east-06.cleardb.net"],
             'port' => $DATABASE_URL["port"],
-            'database' => ltrim($DATABASE_URL["path"], "/"),
-            'username' => $DATABASE_URL["user"],
-            'password' => $DATABASE_URL["pass"],
+            'database' => ltrim($DATABASE_URL["mysql://b5e6018a7ff630:516bb5d3@us-cdbr-east-06.cleardb.net/heroku_0565e35ab9971b1?reconnect=true"], "/"),
+            'username' => $DATABASE_URL["b5e6018a7ff630"],
+            'password' => $DATABASE_URL["516bb5d3"],
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
