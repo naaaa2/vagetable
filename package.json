@@ -26,8 +26,8 @@
     "vite": "^3.1.8"
   },
   "engines": {
-    "node": "16.15.1",
-    "npm": "8.11.0"
+    "node": ">=16.15.1",
+    "npm": ">=8.11.0"
   },
   "name": "vegetable",
   "description": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\" alt=\"Laravel Logo\"></a></p>",
