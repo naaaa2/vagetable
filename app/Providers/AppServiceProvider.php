@@ -24,10 +24,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+<<<<<<< HEAD
         \Schema::defaultStringLength(191);
         // 本番環境(Heroku)でhttpsを強制する
         if (\App::environment('production')) {
             \URL::forceScheme('https');
         }
+=======
+        Schema::defaultStringLength(191);
+>>>>>>> refs/remotes/origin/main
     }
 }

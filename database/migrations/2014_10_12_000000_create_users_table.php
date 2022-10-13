@@ -31,6 +31,11 @@ return new class extends Migration
      */
     public function down()
     {
+<<<<<<< HEAD
         \Schema::dropIfExists('users');
+=======
+        Schema::dropIfExists('users');
+        Schema::defaultStringLength(191);
+>>>>>>> refs/remotes/origin/main
     }
 };
