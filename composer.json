@@ -15,7 +15,8 @@
         "laravel/ui": "^4.0",
         "laravelcollective/html": "^6.3",
         "rakuten-ws/rws-php-sdk": "^1.1",
-        "socialiteproviders/line": "^4.1"
+        "socialiteproviders/line": "^4.1",
+        "ext-gd": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
