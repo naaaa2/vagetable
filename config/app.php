@@ -41,7 +41,7 @@ return [
     |
     */
 
-    //'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool) env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -214,5 +214,5 @@ return [
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 
-    'rakuten_id' => env('RAKUTEN_APPLICATION_ID', false),
+    //'rakuten_id' => env('RAKUTEN_APPLICATION_ID', false),
 ];
