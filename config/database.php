@@ -45,15 +45,22 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => $DATABASE_URL["us-cdbr-east-06.cleardb.net"],
-            'port' => $DATABASE_URL["3306"],
-            'database' => ltrim($DATABASE_URL["mysql://b5e6018a7ff630:516bb5d3@us-cdbr-east-06.cleardb.net/heroku_0565e35ab9971b1?reconnect=true"], "/"),
-            'username' => $DATABASE_URL["b5e6018a7ff630"],
-            'password' => $DATABASE_URL["516bb5d3"],
+            'url' => env('DATABASE_URL'),
+            'host' => $db['host'],
+            'port' => env('DB_PORT', '3306'),
+            'database' => ltrim($db["path"],'/'),
+            'username' => $db['user'],
+            'password' => $db['pass'],
+            'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
             'prefix' => '',
-            'schema' => 'public',
-            'sslmode' => 'require',
+            'prefix_indexes' => true,
+            'strict' => false,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
         ],
 
         // 'mysql' => [
