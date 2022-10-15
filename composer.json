@@ -66,13 +66,7 @@
         }
     },
     "config": {
-        "optimize-autoloader": "false",
-        "preferred-install": "dist",
-        "sort-packages": "false",
-        "allow-plugins": {
-            "pestphp/pest-plugin": "false"
-        }
+        "preferred-install": "dist"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": "false"
+    "minimum-stability": "dev"
 }
