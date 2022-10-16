@@ -22,7 +22,10 @@
   "dependencies": {
     "vegetable": "^1.0.0"
   },
-  "engines":{
-    "node":"16.15.1"
+  "engines": {
+    "node": "16.15.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
