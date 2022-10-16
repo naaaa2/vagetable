@@ -26,6 +26,6 @@
     "node": "16.15.1"
   },
   "devDependencies": {
-    "node_modules/cross-env/dist/bin/cross-env.js": "^7.0.3"
+    "cross-env": "^7.0.3"
   }
 }
