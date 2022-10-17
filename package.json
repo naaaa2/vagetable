@@ -1,8 +1,8 @@
 {
   "name": "vegetable",
+  "description": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\" alt=\"Laravel Logo\"></a></p>",
   "version": "1.0.0",
-  "description": "This example is so cool.",
-  "main": "web.js",
+  "main": "postcss.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run development",
@@ -11,10 +11,11 @@
     "watch-poll": "npm run watch -- --watch-poll",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
     "build": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "heroku-postbuild": "npm run prod"
   },
   "keywords": [
-    "example",
+    "vegetable",
     "heroku"
   ],
   "author": "jane-doe",
