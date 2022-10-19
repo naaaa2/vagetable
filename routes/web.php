@@ -58,7 +58,6 @@ Route::prefix('user')->middleware(['auth'])
     Route::post('/destroy/{id}', 'destroy')->name('destroy');
 });
 
-Auth::routes();
 
 Route::get('/oauth/{provider}/redirect', RedirectToProviderController::class)->name('oauth.redirect');
 Route::get('/oauth/{provider}/callback', CallbackFromProviderController::class)->name('oauth.callback');
@@ -73,6 +72,3 @@ require __DIR__.'/auth.php';
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
