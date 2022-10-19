@@ -58,6 +58,7 @@ Route::prefix('user')->middleware(['auth'])
     Route::post('/destroy/{id}', 'destroy')->name('destroy');
 });
 
+Auth::route();
 
 Route::get('/oauth/{provider}/redirect', RedirectToProviderController::class)->name('oauth.redirect');
 Route::get('/oauth/{provider}/callback', CallbackFromProviderController::class)->name('oauth.callback');
