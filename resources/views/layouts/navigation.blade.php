@@ -88,7 +88,6 @@
             <x-nav-link :href="route('vege_register.index')" :active="request()->routeIs('vege_register.index')">
                 {{ __('野菜の登録') }}
             </x-nav-link>
-            <br>
             <x-nav-link :href="route('shopping.list')" :active="request()->routeIs('shopping.list')">
                 {{ __('買い物リスト') }}
             </x-nav-link>
