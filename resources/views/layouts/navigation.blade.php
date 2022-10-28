@@ -14,7 +14,7 @@
                 </div>
 
                 <!-- Scripts -->
-                <script src="{{asset('/js/app.js')}}" defer></script>
+                @vite(['resources/css/app.css', 'resources/js/app.js'])
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
