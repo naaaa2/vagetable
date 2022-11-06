@@ -71,6 +71,8 @@
         </form>
         <br>
 
+        <label for="name" class="col-sm-4 col-form-label text-gray-900">プライベートモードだとログインできない場合があります</label>
+        <br>
         
         <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
