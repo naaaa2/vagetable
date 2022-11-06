@@ -71,7 +71,7 @@
         </form>
         <br>
 
-        <label for="name" class="col-sm-4 col-form-label text-gray-600">プライベートモードだとログインできない場合があります</label>
+        <label for="name" class="col-sm-4 col-form-label text-gray-600">※プライベートモードだとログインできない場合があります</label>
         <br>
         
         <div class="flex items-center justify-end mt-4">
