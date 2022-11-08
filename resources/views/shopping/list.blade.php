@@ -16,9 +16,9 @@
                   </form>
             <div> -->
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
                 <form class="mb-8" method="post" action= "{{ route('shopping.store') }}">
                     @csrf
                       <input type="text" name="mustbuy" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="入力してください">
@@ -37,8 +37,8 @@
         <tbody>
           <tr>
             @foreach($shoppings as $shopping)
-            <td class="border-t-2 border-gray-200 px-2 py-2">{{ $shopping->mustbuy }}</td>
-            <td class="border-t-2 border-gray-200 px-2 py-2">@if(isset($shoppings))
+            <td class="border-t-2 border-gray-200 px-4 py-2">{{ $shopping->mustbuy }}</td>
+            <td class="border-t-2 border-gray-200 px-4 py-2">@if(isset($shoppings))
                 <form id="delete_{{ $shopping->shopping_id }}" method="post" action="{{ route('shopping.destroy', ['shopping_id' => $shopping->shopping_id ])}}">
                     @csrf
                     <div class="p-2 w-full">
