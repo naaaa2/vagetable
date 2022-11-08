@@ -17,16 +17,6 @@
             <div>
               
     
-    <div class="mt-8">
-        <form class="w-10/12 mx-auto md:max-w-md" method="post" action= "{{ route('shopping.store') }}">
-            <div class="mb-8">
-            @csrf
-                <input type="text" name="mustbuy" placeholder="入力してください" class="w-full py-2 border-b focus:outline-none focus:border-b-2 focus:border-indigo-500 placeholder-gray-500 placeholder-opacity-50">
-                <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">追加</button>
-            </div>
-        </form>
-    </div>
-    
     <div class="lg:w-2/3 w-full mx-auto overflow-auto">
      <table class="table-auto w-full text-left whitespace-no-wrap">
         <thead>
@@ -39,7 +29,7 @@
           <tr>
             @foreach($shoppings as $shopping)
             <td class="border-t-2 border-gray-200 px-6 py-3">{{ $shopping->mustbuy }}</td>
-            <th>@if(isset($shoppings))
+            <th class="border-t-2 border-gray-200 px-6 py-3">@if(isset($shoppings))
                 <form id="delete_{{ $shopping->shopping_id }}" method="post" action="{{ route('shopping.destroy', ['shopping_id' => $shopping->shopping_id ])}}">
                     @csrf
                     <div class="p-2 w-full">
