@@ -16,7 +16,7 @@
                   </form>
             <div> -->
 
-    <div class="lg:w-full md:w-full mx-auto">
+    <div class="py-12">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <form class="mb-8" method="post" action= "{{ route('shopping.store') }}">
