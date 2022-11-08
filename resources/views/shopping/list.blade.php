@@ -37,8 +37,8 @@
         <tbody>
           <tr>
             @foreach($shoppings as $shopping)
-            <td class="border-t-2 border-gray-200 px-4 py-1">{{ $shopping->mustbuy }}</td>
-            <td class="border-t-2 border-gray-200 px-4 py-1">@if(isset($shoppings))
+            <td class="border-t-2 border-gray-200 px-2 py-2">{{ $shopping->mustbuy }}</td>
+            <td class="border-t-2 border-gray-200 px-2 py-2">@if(isset($shoppings))
                 <form id="delete_{{ $shopping->shopping_id }}" method="post" action="{{ route('shopping.destroy', ['shopping_id' => $shopping->shopping_id ])}}">
                     @csrf
                     <div class="p-2 w-full">
