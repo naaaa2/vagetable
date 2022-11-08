@@ -58,22 +58,21 @@
                 <input placeholder="入力してください" class="w-full flex-1 bg-gray-50 text-gray-800 placeholder-gray-500 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
                 <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">追加</button>
                 </form>
-                <br>
             </div>
                         
     <div class="lg:w-2/3 w-full mx-auto overflow-auto">
      <table class="table-auto w-full text-left whitespace-no-wrap">
         <thead>
           <tr>
-            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">欲しいもの</th>
+            <th class="px-6 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">欲しいもの</th>
             <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"></th>
           </tr>
         </thead>
         <tbody>
         @foreach($shoppings as $shopping)
           <tr>
-            <td class="border-t-2 border-gray-200 px-4 py-3">{{ $shopping->mustbuy }}</td>
-            <td class="border-t-2 border-gray-200 px-4 py-2">@if(isset($shoppings))
+            <td class="border-t-2 border-gray-200 px-6 py-3">{{ $shopping->mustbuy }}</td>
+            <td class="border-t-2 border-gray-200 px-4 py-3">@if(isset($shoppings))
                 <form id="delete_{{ $shopping->shopping_id }}" method="post" action="{{ route('shopping.destroy', ['shopping_id' => $shopping->shopping_id ])}}">
                     @csrf
                     <div class="p-2 w-full">
