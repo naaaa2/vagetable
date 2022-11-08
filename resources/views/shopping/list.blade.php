@@ -6,7 +6,7 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    <!-- <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <form class="mb-8" method="post" action= "{{ route('shopping.store') }}">
@@ -14,8 +14,14 @@
                       <input type="text" name="mustbuy" placeholder="入力してください">
                       <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">追加</button>
                   </form>
-            <div>
-              
+            <div> -->
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <input  placeholder="入力してください" type="text" name="mustbuy" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
     
     <div class="lg:w-2/3 w-full mx-auto overflow-auto">
      <table class="table-auto w-full text-left whitespace-no-wrap">
@@ -28,8 +34,8 @@
         <tbody>
           <tr>
             @foreach($shoppings as $shopping)
-            <td class="border-t-2 border-gray-200 px-4 py-2">{{ $shopping->mustbuy }}</td>
-            <td class="border-t-2 border-gray-200 px-4 py-2">@if(isset($shoppings))
+            <td class="border-t-2 border-gray-200 px-4 py-1">{{ $shopping->mustbuy }}</td>
+            <td class="border-t-2 border-gray-200 px-4 py-1">@if(isset($shoppings))
                 <form id="delete_{{ $shopping->shopping_id }}" method="post" action="{{ route('shopping.destroy', ['shopping_id' => $shopping->shopping_id ])}}">
                     @csrf
                     <div class="p-2 w-full">
