@@ -9,10 +9,10 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
+                <!-- <div class="p-6 bg-white border-b border-gray-200"> -->
                 <form class="w-full md:max-w-md flex gap-2" method="post" action= "{{ route('shopping.store') }}">
                 @csrf
-                <input placeholder="入力してください" class="w-full flex-1 bg-gray-50 text-gray-800 placeholder-gray-500 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
+                <input type="text" name="mustbuy" placeholder="入力してください" class="w-full flex-1 bg-gray-50 text-gray-800 placeholder-gray-500 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
                 <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">追加</button>
                 </form>
             </div>
