@@ -6,49 +6,6 @@
         </h2>
     </x-slot>
 
-    <!-- <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-            <div class="xl:w-5/12 flex flex-col justify-center items-center lg:items-start sm:text-center lg:text-left lg:py-12 xl:py-24">
-                <form class="w-full md:max-w-md flex gap-2" method="post" action= "{{ route('shopping.store') }}">
-                @csrf
-                <input placeholder="入力してください" class="w-full flex-1 bg-gray-50 text-gray-800 placeholder-gray-500 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
-                <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">追加</button>
-                </form>
-            </div>
-      
-
-    <div class="lg:w-2/3 w-full mx-auto overflow-auto">
-     <table class="table-auto w-full text-left whitespace-no-wrap">
-        <thead>
-          <tr>
-            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">欲しいもの</th>
-            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            @foreach($shoppings as $shopping)
-            <td class="border-t-2 border-gray-200 px-4 py-2">{{ $shopping->mustbuy }}</td>
-            <td class="border-t-2 border-gray-200 px-4 py-2">@if(isset($shoppings))
-                <form id="delete_{{ $shopping->shopping_id }}" method="post" action="{{ route('shopping.destroy', ['shopping_id' => $shopping->shopping_id ])}}">
-                    @csrf
-                    <div class="p-2 w-full">
-                    <a href="#" data-id="{{ $shopping->shopping_id }}" onclick="deletePost(this)" class="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">削除</a>
-                    </div>
-                @endif
-                </form>
-            </td>
-          </tr>
-          @endforeach
-        </tbody>
-        </table>
-        
-    </div>
-    </div>
-    </div>
-    </div> -->
-
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -69,8 +26,8 @@
           </tr>
         </thead>
         <tbody>
-        @foreach($shoppings as $shopping)
           <tr>
+          @foreach($shoppings as $shopping)
             <td class="border-t-2 border-gray-200 px-6 py-3">{{ $shopping->mustbuy }}</td>
             <td class="border-t-2 border-gray-200 px-4 py-3">@if(isset($shoppings))
                 <form id="delete_{{ $shopping->shopping_id }}" method="post" action="{{ route('shopping.destroy', ['shopping_id' => $shopping->shopping_id ])}}">
