@@ -28,11 +28,11 @@
         <tbody>
           <tr>
             @foreach($shoppings as $shopping)
-            <td class="border-t-2 border-gray-200 px-4 py-3">{{ $shopping->mustbuy }}</td>
-            <td class="border-t-2 border-gray-200 px-4 py-3">@if(isset($shoppings))
+            <td class="border-t-2 border-gray-200 px-4 py-2">{{ $shopping->mustbuy }}</td>
+            <td class="border-t-2 border-gray-200 px-4 py-2">@if(isset($shoppings))
                 <form id="delete_{{ $shopping->shopping_id }}" method="post" action="{{ route('shopping.destroy', ['shopping_id' => $shopping->shopping_id ])}}">
                     @csrf
-                    <div class="p-2 w-1/12">
+                    <div class="p-2 w-full">
                     <a href="#" data-id="{{ $shopping->shopping_id }}" onclick="deletePost(this)" class="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">削除</a>
                     </div>
                 @endif
