@@ -8,6 +8,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
             <div class="xl:w-5/12 flex flex-col justify-center items-center lg:items-start sm:text-center lg:text-left lg:py-12 xl:py-24">
                 <form class="w-full md:max-w-md flex gap-2" method="post" action= "{{ route('shopping.store') }}">
                 @csrf
@@ -43,6 +44,7 @@
         </tbody>
         </table>
         
+    </div>
     </div>
     </div>
     </div>
