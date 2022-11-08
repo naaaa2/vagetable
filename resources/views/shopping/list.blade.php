@@ -6,7 +6,7 @@
         </h2>
     </x-slot>
 
-    <!-- <div class="py-12">
+    <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <form class="mb-8" method="post" action= "{{ route('shopping.store') }}">
@@ -14,18 +14,16 @@
                       <input type="text" name="mustbuy" placeholder="入力してください">
                       <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">追加</button>
                   </form>
-            <div> -->
-
-    <div class="py-12">
-        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <form class="mb-8" method="post" action= "{{ route('shopping.store') }}">
-                    @csrf
-                      <input type="text" name="mustbuy" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="入力してください">
-                      <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">追加</button>
-                  </form>
             <div>
-    
+
+    <div class="xl:w-5/12 flex flex-col justify-center items-center lg:items-start sm:text-center lg:text-left lg:py-12 xl:py-24">
+        <form class="w-full md:max-w-md flex gap-2" method="post" action= "{{ route('shopping.store') }}">
+          <input placeholder="入力してください" class="w-full flex-1 bg-gray-50 text-gray-800 placeholder-gray-500 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
+          <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Sign up</button>
+        </form>
+      </div>
+      
+
     <div class="lg:w-2/3 w-full mx-auto overflow-auto">
      <table class="table-auto w-full text-left whitespace-no-wrap">
         <thead>
