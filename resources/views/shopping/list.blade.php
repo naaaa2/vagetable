@@ -70,7 +70,7 @@
           </tr>
         </thead>
         <tbody>
-        @foreach($veges as $vege)
+        @foreach($shoppings as $shopping)
           <tr>
             <td class="border-t-2 border-gray-200 px-4 py-3">{{ $shopping->mustbuy }}</td>
             <td class="border-t-2 border-gray-200 px-4 py-2">@if(isset($shoppings))
