@@ -16,7 +16,7 @@
                   </form>
             <div> -->
 
-    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+    <div class="py-12">
         <div class="flex flex-wrap -m-2">
             <div class="p-2 w-1/2">
                 <form class="mb-8" method="post" action= "{{ route('shopping.store') }}">
