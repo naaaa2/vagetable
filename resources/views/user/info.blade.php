@@ -46,7 +46,7 @@
                             <form id="delete_{{ $users->id }}" method="post" action="{{ route('user.destroy', ['id' => $users->id ])}}">
                                 @csrf
                                 <div class="p-2 w-full">
-                                <a href="#" data-id="{{ $users->id }}" onclick="deletePost(this)" class="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">退会する</a>
+                                <a href="#" data-id="{{ $users->id }}" onclick="deletePost(this)" class="flex mx-auto text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">退会する</a>
                                 </div>
                             @endif
                             </form>

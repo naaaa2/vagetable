@@ -6,7 +6,7 @@
         </h2>
     </x-slot>
 
-    <!-- <div class="py-12">
+    <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <form class="mb-8" method="post" action= "{{ route('shopping.store') }}">
@@ -15,8 +15,7 @@
                       <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">追加</button>
                   </form>
             <div>
-        </div>
-    </div>        -->
+              
     
     <div class="mt-8">
         <form class="w-10/12 mx-auto md:max-w-md" method="post" action= "{{ route('shopping.store') }}">
@@ -54,6 +53,8 @@
         </tbody>
         </table>
         
+    </div>
+    </div>
     </div>
 
     <br>
